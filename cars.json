@@ -1,0 +1,110 @@
+[
+    {
+        "sno": 1,
+        "make": "Honda",
+        "model": "Civic",
+        "variant": "Oriel",
+        "year": 2007,
+        "color": "Silver",
+        "hp": 150
+    },
+    {
+        "sno": 2,
+        "make": "Toyota",
+        "model": "Corolla",
+        "variant": "Gli",
+        "year": 2012,
+        "color": "White",
+        "hp": 120
+    },
+    {
+        "sno": 3,
+        "make": "Suzuki",
+        "model": "Mehran",
+        "variant": "VXR",
+        "year": 2016,
+        "color": "Silver",
+        "hp": 45
+    },
+    {
+        "sno": 4,
+        "make": "Suzuki",
+        "model": "Mehran",
+        "variant": "VXR",
+        "year": 2016,
+        "color": "Silver",
+        "hp": 45
+    },
+    {
+        "sno": 5,
+        "make": "Suzuki",
+        "model": "Mehran",
+        "variant": "VXR",
+        "year": 2016,
+        "color": "Silver",
+        "hp": 45
+    },
+    {
+        "sno": 6,
+        "make": "Suzuki",
+        "model": "Mehran",
+        "variant": "VXR",
+        "year": 2016,
+        "color": "Silver",
+        "hp": 45
+    },
+    {
+        "sno": 7,
+        "make": "Suzuki",
+        "model": "Mehran",
+        "variant": "VXR",
+        "year": 2016,
+        "color": "Silver",
+        "hp": 45
+    },
+    {
+        "sno": 8,
+        "make": "Suzuki",
+        "model": "Mehran",
+        "variant": "VXR",
+        "year": 2016,
+        "color": "Silver",
+        "hp": 45
+    },
+    {
+        "sno": 9,
+        "make": "Suzuki",
+        "model": "Mehran",
+        "variant": "VXR",
+        "year": 2016,
+        "color": "Silver",
+        "hp": 45
+    },
+    {
+        "sno": 10,
+        "make": "Suzuki",
+        "model": "Mehran",
+        "variant": "VXR",
+        "year": 2016,
+        "color": "Silver",
+        "hp": 45
+    },
+    {
+        "sno": 11,
+        "make": "Suzuki",
+        "model": "Mehran",
+        "variant": "VXR",
+        "year": 2016,
+        "color": "Silver",
+        "hp": 45
+    },
+    {
+        "sno": 12,
+        "make": "Suzuki",
+        "model": "Mehran",
+        "variant": "VXR",
+        "year": 2016,
+        "color": "Silver",
+        "hp": 45
+    }
+]

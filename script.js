@@ -25,55 +25,148 @@
 // document.getElementById("hp").innerHTML = car1['hp'];
 
 // Using json format
-const Cars = [
-    {
-        "sno": 1,
-        "make": "Honda",
-        "model": "Civic",
-        "variant": "Oriel",
-        "year": 2007,
-        "color": "Silver",
-        "hp": 150
-    },
-    {
-        "sno": 2,
-        "make": "Toyota",
-        "model": "Corolla",
-        "variant": "Gli",
-        "year": 2012,
-        "color": "White",
-        "hp": 120
-    },
-    {
-        "sno": 3,
-        "make": "Suzuki",
-        "model": "Mehran",
-        "variant": "VXR",
-        "year": 2016,
-        "color": "Silver",
-        "hp": 45
+// const Cars = [
+//     {
+//         "sno": 1,
+//         "make": "Honda",
+//         "model": "Civic",
+//         "variant": "Oriel",
+//         "year": 2007,
+//         "color": "Silver",
+//         "hp": 150
+//     },
+//     {
+//         "sno": 2,
+//         "make": "Toyota",
+//         "model": "Corolla",
+//         "variant": "Gli",
+//         "year": 2012,
+//         "color": "White",
+//         "hp": 120
+//     },
+//     {
+//         "sno": 3,
+//         "make": "Suzuki",
+//         "model": "Mehran",
+//         "variant": "VXR",
+//         "year": 2016,
+//         "color": "Silver",
+//         "hp": 45
+//     },
+//     {
+//         "sno": 4,
+//         "make": "Suzuki",
+//         "model": "Mehran",
+//         "variant": "VXR",
+//         "year": 2016,
+//         "color": "Silver",
+//         "hp": 45
+//     },
+//     {
+//         "sno": 5,
+//         "make": "Suzuki",
+//         "model": "Mehran",
+//         "variant": "VXR",
+//         "year": 2016,
+//         "color": "Silver",
+//         "hp": 45
+//     },
+//     {
+//         "sno": 6,
+//         "make": "Suzuki",
+//         "model": "Mehran",
+//         "variant": "VXR",
+//         "year": 2016,
+//         "color": "Silver",
+//         "hp": 45
+//     },
+//     {
+//         "sno": 7,
+//         "make": "Suzuki",
+//         "model": "Mehran",
+//         "variant": "VXR",
+//         "year": 2016,
+//         "color": "Silver",
+//         "hp": 45
+//     },
+//     {
+//         "sno": 8,
+//         "make": "Suzuki",
+//         "model": "Mehran",
+//         "variant": "VXR",
+//         "year": 2016,
+//         "color": "Silver",
+//         "hp": 45
+//     },
+//     {
+//         "sno": 9,
+//         "make": "Suzuki",
+//         "model": "Mehran",
+//         "variant": "VXR",
+//         "year": 2016,
+//         "color": "Silver",
+//         "hp": 45
+//     },
+//     {
+//         "sno": 10,
+//         "make": "Suzuki",
+//         "model": "Mehran",
+//         "variant": "VXR",
+//         "year": 2016,
+//         "color": "Silver",
+//         "hp": 45
+//     },
+//     {
+//         "sno": 11,
+//         "make": "Suzuki",
+//         "model": "Mehran",
+//         "variant": "VXR",
+//         "year": 2016,
+//         "color": "Silver",
+//         "hp": 45
+//     },
+//     {
+//         "sno": 12,
+//         "make": "Suzuki",
+//         "model": "Mehran",
+//         "variant": "VXR",
+//         "year": 2016,
+//         "color": "Silver",
+//         "hp": 45
+//     }
+// ]
+
+// importing json file
+fetch("cars.json")
+
+.then(function(response) {
+    return response.json();
+})
+
+.then(function(cars){
+    // New trick
+    let newData = document.getElementById("data");
+    let filled = "";
+    for(let car of cars){
+        filled += `
+                <tr>
+                <td id="sno">${car['sno']}</td>
+                <td id="make">${car['make']}</td>
+                <td id="model">${car['model']}</td>
+                <td id="variant">${car['variant']}</td>
+                <td id="year">${car['year']}</td>
+                <td id="color">${car['color']}</td>
+                <td id="hp">${car['hp']}</td>
+              </tr>
+        `;
+    
     }
-];
+    
+    newData.innerHTML = filled;
 
-// New trick
-let newData = document.getElementById("data");
-let filled = "";
-for(let car of Cars){
-    filled += `
-            <tr>
-            <td id="sno">${car['sno']}</td>
-            <td id="make">${car['make']}</td>
-            <td id="model">${car['model']}</td>
-            <td id="variant">${car['variant']}</td>
-            <td id="year">${car['year']}</td>
-            <td id="color">${car['color']}</td>
-            <td id="hp">${car['hp']}</td>
-          </tr>
-    `;
+})
 
-}
 
-newData.innerHTML = filled;
 
 // Getting data using loop
 
